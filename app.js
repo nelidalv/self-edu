@@ -13,8 +13,8 @@ const heading3 = h2list[h2list.length-1]
 // console.log(heading3)
 
 setTimeout( () => {
-    addStylesTo(heading,'GoGo!')
-}, 1000)
+    addStylesTo(heading,'Modified JS')
+}, 2000)
 const link = heading3.querySelector('a')
 link.addEventListener('click', (event) => {
     event.preventDefault()
@@ -25,10 +25,10 @@ link.addEventListener('click', (event) => {
 })
 setTimeout( () => {
     addStylesTo(heading2,'norm')
-}, 1500)
+}, 2500)
 setTimeout( () => {
-    addStylesTo(heading3.children[0],'Modified JS', '#f55555', '#fff', '3rem') //querySelector('a')
-}, 2000)
+    addStylesTo(heading3.children[0],'GoGo Leearn more', '#f55555', '#fff', '3rem') //querySelector('a')
+}, 3000)
 
 function addStylesTo(node, text, bgcolor = '#f1f1f1', color= 'green', fontSize) {
     node.textContent = text
